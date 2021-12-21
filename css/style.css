@@ -41,7 +41,8 @@ ul.menu li{
 }
 ul.menu li a{
     /*background-color: #3d7bb3;*/
-    background-image: linear-gradient(to top, rgba(255, 73, 1, 0.767),#fcb878);
+    background-image: linear-gradient(to top, rgba(255, 94, 1, 0.767),#fcb878);
+    background-attachment: fixed;
     font-weight: 700;
     border-radius: 5px;
     padding: 20px 30px;
@@ -52,7 +53,6 @@ ul.menu li a{
 
 ul.menu li a:hover{
     background-color: #f80303;
-    
 }
 
 .apresentacao, .contato {
@@ -107,7 +107,7 @@ button{
 }
 
 button:hover {
-    background-image: linear-gradient(to bottom, rgba(252, 161, 109, 0.767),#ff5100);
+    background-color: #ff7300;
     cursor: pointer;
 }
 
