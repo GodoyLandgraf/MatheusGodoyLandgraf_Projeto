@@ -96,7 +96,7 @@ textarea{
 
 button{
     margin: 10px;
-    background-color: rgba(252, 161, 109, 0.767);
+    background-image: linear-gradient(to top, rgba(255, 73, 1, 0.767),#fcb878);
     font-family: 'Source Sans 3';
     font-size: 16px;
     font-weight: 700;
