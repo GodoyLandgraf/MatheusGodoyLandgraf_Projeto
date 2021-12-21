@@ -11,9 +11,6 @@ body {
     border: 1px solid black;
   }
 
-  .imagem {
-    align-items: center;
-  }
   img{
     display: block;
     margin: 0;
@@ -21,3 +18,35 @@ body {
     object-fit: cover;
     border: 1px solid black;
   }
+
+  .menu{
+
+  }
+
+  nav ul, nav li{
+      list-style: none;
+      margin: 0;
+      padding: 0;
+  }
+
+  nav ul {
+    display: flex;
+    text-align: center;
+      
+  }
+  
+  nav a {
+      display: block;
+      padding:30px;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: rgb(124, 73, 31);
+  }
+
+  nav .active a, nav a:hover {
+      background-color: rgb(85, 85, 170);
+      color: #FF9500;
+  }
+  
+
+
