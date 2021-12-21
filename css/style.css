@@ -1,10 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Source+Sans+3:wght@400;700&display=swap');
+
+**{
+
+}
 html{
     margin-top: 10px;
     background-color: burlywood;
+    font-family: 'Source Sans 3', sans-serif;
 }
 body {
     width: 1280px;
-    height: 900px;
+    height: 930px;
     margin: auto;
     background-color: #FF9500;
     padding: 0px;
@@ -19,34 +25,82 @@ body {
     border: 1px solid black;
   }
 
-  .menu{
+  #all{
+    width: 900px;
+    height: 90px;
+    line-height: 50px; /* centraliza na vertical */
+    /*background-color: #f1f1f1;*/
+    margin: 0 auto;
+}
+ul.menu{
+    text-align: center; 
+}
+ul.menu li{
+    display: inline-block; 
+    margin: 0 65px;
+}
+ul.menu li a{
+    background-color: #3d7bb3;
+    font-weight: 700;
+    border-radius: 5px;
+    padding: 20px 30px;
+    color: #fff;
+    text-decoration: none;
+}
 
-  }
+ul.menu li a:hover{
+    background-color: #8BBADC;
+}
 
-  nav ul, nav li{
-      list-style: none;
-      margin: 0;
-      padding: 0;
-  }
+.apresentacao, .contato {
+    padding: 0;
+    color: white;
+    margin: 0;
+    background-color: #3d7bb3;
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 520px;
+}
 
-  nav ul {
-    display: flex;
-    text-align: center;
-      
-  }
-  
-  nav a {
-      display: block;
-      padding:30px;
-      text-decoration: none;
-      text-transform: uppercase;
-      color: rgb(124, 73, 31);
-  }
+.apresentacao, .contato h1, p{
+    padding: 0px;
+    margin: 5px;
+}
 
-  nav .active a, nav a:hover {
-      background-color: rgb(85, 85, 170);
-      color: #FF9500;
-  }
-  
+label{
+    display: block;
+    padding: 3px;
+    margin: 2px;
+}
+input[type=text], textarea{
+    padding: 5px;
+    width: 250px;
+    font-size: 15px;
+    border:1px solid #CCC;
+    outline: 0;
+    margin-top: 0px;
+}
 
+textarea{
+    height: 70px;
+    width: 400px;
+    resize: none;
+}
+
+button{
+    margin: 10px;
+    background-color: #3d7bb3;
+    font-weight: 700;
+    border-radius: 5px;
+    padding: 20px 30px;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Source Sans 3'
+    
+}
+
+button:hover {
+    background-color: #8BBADC;
+    cursor: pointer;
+}
 
