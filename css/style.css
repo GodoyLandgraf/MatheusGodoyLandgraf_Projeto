@@ -61,7 +61,7 @@ ul.menu li a:hover{
     padding: 0px;
     color: white;
     margin: 0px;
-    background-image: linear-gradient(to left, rgba(146, 135, 245, 0.432),#358cd8);
+    background-image: linear-gradient(to bottom, rgba(146, 135, 245, 0.432),#358cd8);
     background-attachment: fixed;
     /*background-color: #3d7bb3; */
     border: 1px solid black;
