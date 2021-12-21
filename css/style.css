@@ -62,21 +62,24 @@ ul.menu li a:hover{
     background-color: #3d7bb3;
     border: 1px solid black;
     border-radius: 5px;
-    height: 520px;
+    height: 510px;
 }
 
 .apresentacao, .contato h1, p{
     padding: 5px;
     margin: 2px;
+    line-height: 2;
 }
 
 label{
     display: block;
+    line-height: 2;
     padding: 3px;
     margin: 2px;
 }
 input[type=text], textarea{
     padding: 5px;
+    line-height: 2;
     width: 250px;
     font-size: 15px;
     border:1px solid #CCC;
@@ -85,7 +88,7 @@ input[type=text], textarea{
 }
 
 textarea{
-    height: 70px;
+    height: 120px;
     width: 400px;
     resize: none;
 }
