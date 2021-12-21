@@ -43,7 +43,9 @@ ul.menu li{
     margin: 0 65px;
 }
 ul.menu li a{
-    background-color: #3d7bb3;
+    /*background-color: #3d7bb3;*/
+    background-image: linear-gradient(to top, rgba(131, 118, 247, 0.432),#3d7bb3);
+    background-attachment: fixed;
     font-weight: 700;
     border-radius: 5px;
     padding: 20px 30px;
@@ -52,14 +54,16 @@ ul.menu li a{
 }
 
 ul.menu li a:hover{
-    background-color: #8BBADC;
+    background-color: #5aa5db;
 }
 
 .apresentacao, .contato {
     padding: 0px;
     color: white;
     margin: 0px;
-    background-color: #3d7bb3;
+    background-image: linear-gradient(to left, rgba(146, 135, 245, 0.432),#358cd8);
+    background-attachment: fixed;
+    /*background-color: #3d7bb3; */
     border: 1px solid black;
     border-radius: 5px;
     height: 510px;
