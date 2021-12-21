@@ -5,14 +5,17 @@
 }
 html{
     margin-top: 10px;
-    background-color: burlywood;
+    background-image: linear-gradient(to bottom, white,burlywood);
+    background-attachment: fixed;
+    /*background-color: burlywood;*/
     font-family: 'Source Sans 3', sans-serif;
 }
 body {
     width: 1280px;
     height: 930px;
     margin: auto;
-    background-color: #FF9500;
+    background-image: linear-gradient(to top, rgb(236, 205, 164),#FF9500);
+    background-attachment: fixed;
     padding: 0px;
     border: 1px solid black;
   }
@@ -53,9 +56,9 @@ ul.menu li a:hover{
 }
 
 .apresentacao, .contato {
-    padding: 0;
+    padding: 0px;
     color: white;
-    margin: 0;
+    margin: 0px;
     background-color: #3d7bb3;
     border: 1px solid black;
     border-radius: 5px;
@@ -63,8 +66,8 @@ ul.menu li a:hover{
 }
 
 .apresentacao, .contato h1, p{
-    padding: 0px;
-    margin: 5px;
+    padding: 5px;
+    margin: 2px;
 }
 
 label{
