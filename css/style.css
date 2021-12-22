@@ -2,7 +2,7 @@
 
 html{
     margin-top: 10px;
-    background-image: linear-gradient(to bottom, rgb(255, 0, 0),burlywood);
+    background-image: linear-gradient(to bottom, #b63309,burlywood);
     background-attachment: fixed;
     /*background-color: burlywood;*/
     font-family: 'Source Sans 3', sans-serif;
@@ -11,7 +11,7 @@ body {
     width: 1280px;
     height: 930px;
     margin: auto;
-    background-image: linear-gradient(to top, rgb(0, 0, 0),#FF9500);
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0),#ff8501);
     background-attachment: fixed;
     padding: 0px;
     border: 1px solid white;
@@ -59,7 +59,7 @@ ul.menu li a:hover{
     padding: 0px;
     color: white;
     margin: 0px;
-    background-image: linear-gradient(to bottom, rgba(212, 93, 23, 0.767),#f8c798);
+    background-image: linear-gradient(to bottom, rgba(212, 45, 23, 0.801),#f5af6e);
     background-attachment: fixed;
     /*background-color: #3d7bb3; */
     border: 1px solid white;
