@@ -194,7 +194,7 @@ button:hover {
     border: 1.3px solid white;
 }
 
-@media screen and (max-width : 1330px),(max-height: 960px){ 
+@media screen and (max-width : 1024px),(max-height: 768px){ 
     
    img{
     display: block;
@@ -211,8 +211,8 @@ button:hover {
 #all{
     width: 640px;
     height: 80px;
-    line-height: 60px; /* centraliza na vertical */
-    /*background-color: #f1f1f1;*/
+    line-height: 60px; 
+
     margin: 0 auto;
 }
 
@@ -246,16 +246,12 @@ ul.links li:hover {
 }
 
 h1 {
-   
     padding: 2px;
     font-size: 16px;
-    
 }
 p{
     font-size: 14px;
 }
-
-
 
 input[type=text], textarea{
     
@@ -277,15 +273,4 @@ textarea{
 button{
     width: 350px;
 }
-
-button:hover {
-    background-image: linear-gradient(to bottom, rgba(252, 161, 109, 0.767),#ff5e00);
-    cursor: pointer;
-    letter-spacing: 1.5px;
-    color:white;
-    font-size: 18px;
-    border: 1.3px solid white;
-}
-
-
 }
