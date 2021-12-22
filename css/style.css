@@ -45,15 +45,17 @@ ul.menu li a{
     font-weight: 700;
     border-radius: 5px;
     padding: 20px 30px;
-    color: #fff;
+    color: rgba(255, 255, 255, 0.8);
     text-decoration: none;
-    border: 1px solid white;
+    transition: 0.5s;
 }
 
 ul.menu li a:hover{
+    color: rgba(255, 255, 255, 1);
     background-color: #f80303;
-    
+    border: 2px solid rgba(255, 255, 255, 1);
 }
+
 
 .apresentacao, .contato {
     padding: 0px;
@@ -62,7 +64,7 @@ ul.menu li a:hover{
     background-image: linear-gradient(to bottom, rgba(212, 45, 23, 0.801),#f5af6e);
     background-attachment: fixed;
     /*background-color: #3d7bb3; */
-    border: 1px solid white;
+    border: 0.5px solid rgba(255, 255, 255, 0.7);
     border-radius: 5px;
     height: 510px;
 }
