@@ -15,6 +15,7 @@ body {
     background-attachment: fixed;
     padding: 0px;
     border: 1px solid white;
+    position: relative;
   }
 
   img{
@@ -53,7 +54,7 @@ ul.menu li a{
 ul.menu li a:hover{
     color: rgba(255, 255, 255, 1);
     background-color: #f80303;
-    border: 2px solid rgba(255, 255, 255, 1);
+    border: 1px solid rgba(255, 255, 255, 1);
 }
 
 
@@ -102,14 +103,20 @@ button{
     font-family: 'Source Sans 3';
     font-size: 16px;
     font-weight: 700;
-    border: 1px solid white;
     border-radius: 5px;
     padding: 20px 30px;
-    color: #fff;
+    color: rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    outline:none;
+    transition: 0.2s;
+
+    
 }
 
 button:hover {
     background-image: linear-gradient(to bottom, rgba(252, 161, 109, 0.767),#ff5e00);
     cursor: pointer;
+    color:white;
+    border: 1.3px solid white;
 }
 
