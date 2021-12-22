@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto TCS</title>
+    <title>Contanto</title>
+    <script defer src="index.js"></script>
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
 </head>
 <body>
@@ -17,22 +18,26 @@
         <li><a href="contato.html">CONTATO</a></li>
     </ul>
 </nav>
-<form>
+<div id="error"></div>
+<form id ="form" action="/" method="GET">
     <div class="contato">
-        <h1>CONTATO:</h1>
-            <label for="nome">
-                Nome Completo: <br>
-                <input type="text" name="nome" />
-            </label>
-            <label for="email">
-                Digite Seu E-mail:<br>
-                <input type="text" name="email" />
-            </label>
-            <label for="mensagem">
-                Digite Sua Mensagem:</br>
-                <textarea  name="mensagem"></textarea>
-            </label>
-<button>ENVIAR</button>
+        <h1>CONTATO</h1>
+        <div class="input">
+            <label for="nome"> Nome Completo:</label>
+                <input id="nome" type="text" required name="nome" />
+                <span class="error"> </span>
+        </div>
+        <div class="input">
+            <label for="email"> E-mail:</label>
+                <input id="email" type="email" required name="email" />
+                <span class="error"> </span>
+        </div>
+        <div class="input">
+            <label for="mensagem">Digite Sua Mensagem:</label>
+                <textarea  required id="mensagem" name="mensagem"></textarea>
+                <span class="error"> </span>
+        </div>
+<button type="submit">ENVIAR</button>
     </div>
 </form>
 </body>
