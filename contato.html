@@ -1,44 +1,42 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
+
 <body>
-<img src="assets/goku.jpg" alt="logo" width="1280px" height="310px" >
-<div id="all">
- <nav>
-    <ul class="menu">
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="pessoal.html">PESSOAL</a></li>
-        <li><a href="contato.html">CONTATO</a></li>
-    </ul>
- </nav>
- <div id="error"></div>
- <form id ="validador" action="index.html" method="POST">
-    <div class="contato">
-        <h1>CONTATO</h1>
-        <div class="input-control">
-            <label for="nome"> Nome Completo:</label>
-                <input id="nome" type="text"  name="nome"/>
-                <div class="error"> </div>
-        </div>
-        <div class="input-control">
-            <label for="email"> E-mail:</label>
-                <input id="email" type="text"  name="email" />
-                <div class="error"> </div>
-        </div>
-        <div class="input-control">
-            <label for="mensagem">Digite Sua Mensagem:</label>
-                <textarea  id="mensagem" name="mensagem" ></textarea>
-                <div class="error"> </div>
-        </div>
- <button  type="submit" onclick="return validar()">ENVIAR</button>
-    </div>
-</form>
-<script src="form.js"></script>
+    <img src="assets/goku.jpg" alt="logo" width="1280px" height="310px">
+    <div id="all">
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="pessoal.html">PESSOAL</a></li>
+                <li><a href="contato.html">CONTATO</a></li>
+            </ul>
+        </nav>
+        <div id="error"></div>
+        <form name="form" id="validador" action="index.html" method="POST">
+            <div class="contato">
+                <h1>CONTATO</h1>
+                <label for="nome"> Nome Completo:</label>
+                <input id="nome" type="text" name="nome" />
+                <label for="email"> E-mail:</label>
+                <input id="email" type="text" name="email" />
+                <label for="mensagem">Digite Sua Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" onclick="countText(this)" onkeydown="countText(this)"
+                    onkeyup="countText(this)"></textarea>
+                <label>
+                    <div id="msg"></div>
+                </label>
+                <button type="submit" onclick="return validar()">ENVIAR</button>
+            </div>
+        </form>
+        <script src="form.js"></script>
 </body>
+
 </html>
