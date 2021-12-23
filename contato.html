@@ -11,33 +11,33 @@
 <body>
 <img src="assets/goku.jpg" alt="logo" width="1280px" height="310px" >
 <div id="all">
-<nav>
+ <nav>
     <ul class="menu">
         <li><a href="index.html">HOME</a></li>
         <li><a href="pessoal.html">PESSOAL</a></li>
         <li><a href="contato.html">CONTATO</a></li>
     </ul>
-</nav>
-<div id="error"></div>
-<form id ="validador" action="/" method="POST">
+ </nav>
+ <div id="error"></div>
+ <form id ="validador" action="/" method="POST">
     <div class="contato">
         <h1>CONTATO</h1>
         <div class="input-control">
             <label for="nome"> Nome Completo:</label>
-                <input id="nome" type="text"  name="nome" />
+                <input id="nome" type="text"  name="nome" required/>
                 <div class="error"> </div>
         </div>
         <div class="input-control">
             <label for="email"> E-mail:</label>
-                <input id="email" type="email"  name="email" />
+                <input id="email" type="email"  name="email" required/>
                 <div class="error"> </div>
         </div>
         <div class="input-control">
             <label for="mensagem">Digite Sua Mensagem:</label>
-                <textarea  id="mensagem" name="mensagem"></textarea>
+                <textarea  id="mensagem" name="mensagem" required></textarea>
                 <div class="error"> </div>
         </div>
-<button type="submit">ENVIAR</button>
+ <button type="submit">ENVIAR</button>
     </div>
 </form>
 </body>
