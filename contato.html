@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contanto</title>
-    <script src="form.js"></script>
+    <title>Contato</title>
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
 </head>
 <body>
@@ -19,26 +18,27 @@
     </ul>
  </nav>
  <div id="error"></div>
- <form id ="validador" action="/" method="POST">
+ <form id ="validador" action="index.html" method="POST">
     <div class="contato">
         <h1>CONTATO</h1>
         <div class="input-control">
             <label for="nome"> Nome Completo:</label>
-                <input id="nome" type="text"  name="nome" required/>
+                <input id="nome" type="text"  name="nome"/>
                 <div class="error"> </div>
         </div>
         <div class="input-control">
             <label for="email"> E-mail:</label>
-                <input id="email" type="email"  name="email" required/>
+                <input id="email" type="text"  name="email" />
                 <div class="error"> </div>
         </div>
         <div class="input-control">
             <label for="mensagem">Digite Sua Mensagem:</label>
-                <textarea  id="mensagem" name="mensagem" required></textarea>
+                <textarea  id="mensagem" name="mensagem" ></textarea>
                 <div class="error"> </div>
         </div>
- <button type="submit">ENVIAR</button>
+ <button  type="submit" onclick="return validar()">ENVIAR</button>
     </div>
 </form>
+<script src="form.js"></script>
 </body>
 </html>

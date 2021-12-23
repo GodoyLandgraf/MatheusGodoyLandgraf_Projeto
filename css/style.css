@@ -194,7 +194,7 @@ button:hover {
     border: 1.3px solid white;
 }
 
-@media screen and (max-width : 1330px),(max-height: 960px){ 
+@media screen and (max-width : 1330px){ 
     
    img{
     display: block;

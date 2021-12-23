@@ -1,51 +1,27 @@
-const form=document.getElementById('validador');
-const nome = document.getElementById('nome');
-const email = document.getElementById('email');
-const mensagem = document.getElementById('mensagem');
+var validador = document.getElementById('validador');
 
-form.addEventListener('submit', e => {
-    e.preventDefault();
-    ValidadeInputs();
-});
-const setError = (element, message) =>{
-    const inputControl = element.parentElement;
-    const errorDisplay = inputControl.querySelector('.error');
+function validar (){
+    var nome = validador.nome.value;
+    var email = validador.email.value;
+    var mensagem = validador.mensagem.value;
 
-    errorDisplay.innerText = message;
-    inputControl.classList.add('error');
-    inputControl.classList.remove('sucess');
-}
-
-const isValidEmail= email => {
-    const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    return re.test(String(email).toLowerCase());
-}
-const ValidadeInputs = () => {
-    const nomevalor = nome.value.trim();
-    const emailvalor = email.value.trim();
-    const mensagemvalor = mensagem.value.trim();
-}
-
-    if(nomevalor ==='')
-        setError(nome, 'O campo nome é obrigatório');
-        {
-            setSucess(nome);
-        }
-        if(emailvalor ===''){
-            setError(email, 'O campo e-mail é obrigatório');
-             {
-                setSucess(email);
-            }
-            if(mensagemvalor ===''){
-                setError(mensagem, 'Por favor, insira sua mensagem');
-                {
-                    setSucess(mensagem);
-                }
-        
-    
-
-
-
+    if(nome ==""){
+        alert('Preencha o campo nome!');
+        validador.nome.focus();
+        return false;
     }
+
+    if(email == "" || email.indexOf('@') == -1 || email.indexOf('.') == -1 ){
+        alert('Preencha corretamente o campo email!');
+        validador.nome.focus();
+        return false;
+    }
+
+    if(mensagem == "" || mensagem.length <15 ){
+        alert('O campo da mensagem deve possuir no mínimo 15 caracteres, preencha corretamente!');
+        validador.nome.focus();
+        return false;
+    }
+    alert('Sua mensagem foi enviada corretamente e em breve será respondida! Muito Obrigado :)')
 
 }
